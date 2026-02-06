@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind Output -->
+  <link href="./output.css" rel="stylesheet" />
+
+  <!-- Remix Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+<section class="w-full z-20  md:min-h-[114px] sm:min-h[71px] cursor-pointer  fixed overflow-hidden backdrop-blur-lg z-20">
+
+  <!-- HEADER -->
+  <div class="header  ">
+
+    <!-- TOP BAR -->
+    <div class="flex justify-between items-center lg:mx-[30px] md:mx-[10px]  p-[15px]">
+
+      <!-- Offer text (desktop only) -->
+      <a href="#" class="font-Manrope text-[#070707] text-[15px] animate-pulse hidden md:block">
+        Best special offers! 40% Off!
+      </a>
+
+      <!-- Logo -->
+      <figure>
+        <a href="#"><img src="images/logo.svg" alt="Logo"></a>
+      </figure>
+
+      <!-- Desktop Icons -->
+      <div class="Icon hidden md:flex">
+        <a href="#"><i class="ri-user-line text-[20px] pr-[5px]"></i></a>
+        <a href="#"><i class="ri-search-line text-[20px] pr-[5px]"></i></a>
+        <a href="#"><i class="ri-poker-hearts-line text-[20px] pr-[5px]"></i></a>
+        <a href="#"><i class="ri-shopping-bag-line text-[20px] pr-[5px]"></i></a>
+      </div>
+
+      <!-- Hamburger (mobile only) -->
+      <button id="menuBtn" class="md:hidden text-[26px]">
+        <i class="ri-menu-line"></i>
+      </button>
+
+    </div>
+
+    <hr class="m-0" />
+
+    <!-- NAVBAR (desktop only) -->
+    <nav class="navbar hidden md:block">
+      <ul class="flex gap-[50px] font-[500] py-[15px] justify-center text-[12px] uppercase">
+        <a href="index.html"><li>Homes</li></a>
+        <a href="Shop.html"><li>Shop</li></a>
+        <a href="blog.html"><li>Blog</li></a>
+        <a href="index.html"><li>Pages</li></a>
+        <a href="Shop.html"><li>Mega</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+      </ul>
+    </nav>
+
+  </div>
+</section>
+
+<!-- SIDEBAR (mobile) -->
+<div id="sidebar"
+  class="fixed top-0 left-0 h-full w-[260px] bg-white shadow-lg
+         -translate-x-full transition-transform duration-300 z-50">
+
+  <!-- Close -->
+  <div class="flex justify-end p-4">
+    <button id="closeBtn" class="text-[24px]">
+      <i class="ri-close-line"></i>
+    </button>
+  </div>
+
+  <!-- Menu -->
+  <ul class="flex flex-col gap-6 px-6 text-[14px] uppercase font-[500]">
+    <a href="index.html"><li>Homes</li></a>
+        <a href="Shop.html"><li>Shop</li></a>
+        <a href="blog.html"><li>Blog</li></a>
+        <a href="index.html"><li>Pages</li></a>
+        <a href="Shop.html"><li>Mega</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+  </ul>
+
+  <!-- Icons -->
+  <div class="flex gap-4 px-6 mt-8 text-[20px]">
+    <i class="ri-user-line"></i>
+    <i class="ri-search-line"></i>
+    <i class="ri-poker-hearts-line"></i>
+    <i class="ri-shopping-bag-line"></i>
+  </div>
+</div>
+
+<!-- fake header -->
+<section class="w-full md:min-h-[114px] sm:min-h[71px] bg-[#fff]" >
+<figure class="lg:mx-[30px] md:mx-[10px]  p-[20px]">
+        <a href="#"><img src="" alt="Logo"></a>
+      </figure>
+</section>
+
+
+<!-- Banner Section -->
+
+<section class=" banner min-w-full overflow-hidden z-0">
+<div id="slider" class="flex transition-transform duration-700 ease-linear ">
+
+
+<!-- slider 1 -->
+    <div class="grid grid-cols-1 min-w-full md:grid-cols-[33%_auto]  gap-[20px] opacity-0 pointer-events-none transition-opacity duration-500 ">
+        <div class="conatin md:order-1 order-2 px-[50px] py-[20px] md:px-[50px] md:py-[90px] " >
+            <span><h1 class="font-medium text-[60px] leading-[67px]">New Spring Collection 2023</h1></span>
+
+            <span><p class="text-[#070707]  mt-[30px]">Introducing our new spring fashion collection, perfect for effortless casual chic. From flowy dresses to floral tops, mix and match with ease. Lightweight fabrics and cheerful colors to awaken the Spring in you.</p> </span>
+
+            <button class="bg-[#070707] text-[white] p-[18px_50px_18px_50px] mt-[30px] "><a href="Shop.html">shop now</a></button>
+        </div>
+        <div class="images md:order-2 sm:order-1 ">
+        <img src="images/banner-1.jpg" class="w-full h-full object-cover" alt="">
+    </div>
+    </div>
+<!-- slider 2 -->
+    <div class="grid grid-cols-1 min-w-full md:grid-cols-[33%_auto]  gap-[20px] opacity-0 pointer-events-none transition-opacity duration-500">
+        <div class="conatin md:order-1 order-2 px-[50px] py-[20px] md:px-[50px] md:py-[90px] " >
+            <span><h1 class="font-medium text-[60px] leading-[67px]">New Suits for Men</h1></span>
+
+            <span><p class="text-[#070707] mt-[30px]">Elevate your wardrobe with the new mens suits collection, featuring timeless designs with a modern twist. Crafted from premium fabrics, this collection offers a range of colors and fits to suit any occasion. Make a statement with sleek and sophisticated style.</p> </span>
+
+            <button class="bg-[#070707] text-[white] p-[18px_50px_18px_50px] mt-[30px]"><a href="Shop.html">shop now</a></button>
+        </div>
+        <div class="images md:order-2 sm:order-1 ">
+        <img src="images/banner-2.jpg" class="w-full h-full object-cover" alt="">
+    </div>
+    </div>
+<!-- slider 3 -->
+    <div class="grid grid-cols-1 min-w-full md:grid-cols-[33%_auto]  md:gap-[20px] gap-[10px] opacity-0 pointer-events-none transition-opacity duration-500">
+        <div class="conatin md:order-1 order-2 px-[50px] py-[20px] md:px-[50px] md:py-[90px] " >
+            <span><h1 class="font-medium text-[60px] leading-[67px]">Summer Collection</h1></span>
+
+            <span><p class="text-[#070707] mt-[30px]">Introducing the new fashion summer collection, featuring bold and bright colors, playful prints, and comfortable yet stylish pieces perfect for any occasion. From oversized blazer dresses to monochromatic denim pieces, this collection has something for everyone.</p> </span>
+
+            <button class="bg-[#070707] text-[white] p-[18px_50px_18px_50px] mt-[30px]"><a href="Shop.html">shop now</a></button>
+        </div>
+        <div class="images md:order-2 sm:order-1 ">
+        <img src="images/banner3.jpg" class="w-full h-full object-cover" alt="">
+    </div>
+    </div>
+
+   <div class="min-w-full grid grid-cols-1 md:grid-cols-[33%_auto] gap-[20px]">
+  </div>
+</div>
+</section>
+
+<div class="w-full border-y border-black py-4 overflow-hidden">
+  <div class="flex gap-6 whitespace-nowrap animate-marquee text-sm font-medium">
+    <span>24/7 SUPPORT</span><span>•</span>
+    <span>HIGH QUALITY COTTON</span><span>•</span>
+    <span>FREE DELIVERY</span><span>•</span>
+    <span>MONEY BACK GUARANTEE</span><span>•</span>
+    <span>24/7 SUPPORT</span>
+    <span>•</span>
+    <span>24/7 SUPPORT</span><span>•</span>
+    <span>HIGH QUALITY COTTON</span><span>•</span>
+    <span>FREE DELIVERY</span><span>•</span>
+    <span>MONEY BACK GUARANTEE</span><span>•</span>
+    <span>24/7 SUPPORT</span>
+  </div>
+</div>
+
+<!-- products -->
+<section class="bigsales my-[35px]">
+  <div>
+    <h1 class="uppercase text-center  text-[#070707] text-[24px] font-[700]">Big Sales</h1>
+    <div class="products_items">
+      <div class="flex gap-[50px] items-center justify-center mt-[25px] cursor-pointer ">
+        <span data-tab="women"  class="uppercase tab-btn text-[#838383] font-[400]">Women</span>
+        <span data-tab="men"   class=" tab-btn uppercase text-[#838383] font-[400]">men</span>
+        <span data-tab="kids"   class="tab-btn uppercase text-[#838383] font-[400]">Kids</span>
+        <span data-tab="accessories"   class="tab-btn uppercase text-[#838383] font-[400]">Accessories</span>
+      </div>
+<!-- card -->
+ 
+  <div class="products_card  relative">
+    
+      <button class="text-5xl absolute left-1 top-[50%] z-20 -translate-y-1/2 " id="prevBtn"><i class="ri-arrow-left-circle-fill "></i></button>
+<button class="text-5xl absolute right-1 top-[50%] z-20 -translate-y-1/2 " id="nextBtn"><i class="ri-arrow-right-circle-fill"></i></button>
+   
+       <div id="productwraper" class=" overflow-x-hidden grid grid-flow-col auto-cols-[305px] md:auto-cols-[20%] mt-3.5 justify-start transition-all duration-300">
+
+
+
+<!-- card 1 -->
+         <div class="item  border-1 border-[solid] border-[#838383] relative " data-category="women">
+          <img src="images/p1.jpg" class="object-cover">
+          <span class=" absolute border-[1px] border-[solid] border-[red]   bg-white top-2 right-2 p-[3px_6px]" >
+            <p class="text-[12px] font-[500] text-[red]">-13%</p>
+          </span>
+
+          <span class=" absolute border-[1px] bg-white border-[solid] border-[black] top-2 right-13 p-[3px_6px]" >
+            <p class="text-[12px] font-[500] text-[black] uppercase">best seller</p>
+          </span>
+          <div class=" absolute bottom-50 left-6 right-6 mb-[10px]">
+           <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500] hover:bg-black hover:text-[#fff]"><a href="">👁️ Quick View  </a></button>
+           <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500]  hover:bg-black hover:text-[#fff]"><a href="">➕ Add to cart  </a></button>
+          </div>
+          <div class="desc flex flex-col p-[15px_15px_35px_15px]">
+            <span class="pb-[5px] text-[15px] font-[400] hover:text-[#FC5F49] cursor-pointer">Prada</span>
+            <span class= "text-[14px] font-[400]">Crossback Halter Dress</span>
+            <span class="my-[13px] text-[#454545] text-[12px] font-[400]">A shapely halter dress designed with slinky crossback straps and a leg-baring slit is an elegant option for your upcoming event.</span>
+            <span class="text-[12px] font-[400] text-[#070707]">$2,400.00 - $2,650.00</span>
+          </div>
+        </div>
+<!-- card 2 -->
+        <div class="item border-1 border-[solid] border-[#838383] relative" data-category="women">
+          <img src="images/p2.jpg" class="object-cover">
+
+          <span class=" absolute border-[1px] border-[solid] border-[red] top-2 right-2 p-[3px_6px]" >
+            <p class="text-[12px] font-[500] text-[red]">-11%</p>
+          </span>
+
+          <div class=" absolute bottom-50 left-6 right-6 mb-[10px]">
+           <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500] hover:bg-black hover:text-[#fff]"><a href="">👁️ Quick View  </a></button>
+           <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500]  hover:bg-black hover:text-[#fff]"><a href="">➕ Add to cart  </a></button>
+          </div>
+
+          <div class="desc flex flex-col p-[15px_15px_35px_15px]">
+            <span class="pb-[5px] text-[15px] font-[400] hover:text-[#FC5F49] cursor-pointer">Akris</span>
+            <span class= "text-[14px"] font-[400]>Yoke Waist Leather Miniskirt</span>
+            <span class="my-[13px] text-[#454545] text-[12px] font-[400]">A celadon-shaded leather miniskirt gets a tailored touch with neat pleats and a set-in yoke.</span>
+            <span class="text-[12px] font-[400] text-[#070707]">$800.00 - $900.00</span>
+          </div>
+        </div>
+<!-- card 3 -->
+        <div class="item border-1 border-[solid] border-[#838383] touch-manipulation relative"data-category="women">
+          <img src="images/p3.jpg" class="object-cover">
+
+          
+          <div class=" absolute bottom-50 left-6 right-6 mb-[10px]">
+           <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500] hover:bg-black hover:text-[#fff]"><a href="">👁️ Quick View  </a></button>
+           <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500]  hover:bg-black hover:text-[#fff]"><a href="">➕ Add to cart  </a></button>
+          </div>
+
+          <span class=" absolute border-[1px] border-[solid]   bg-white border-[red] top-2 right-2 p-[3px_6px]" >
+            <p class="text-[12px] font-[500] text-[red]">-13%</p>
+          </span>
+
+          <div class="desc flex flex-col p-[15px_15px_35px_15px]">
+            <span class="pb-[5px] text-[15px] font-[400] hover:text-[#FC5F49] cursor-pointer">Valentino</span>
+            <span class= "text-[14px"] font-[400]>V Logo Pocket Wool & Silk Dress</span>
+            <span class="my-[13px] text-[#454545] text-[12px] font-[400]">A pair of pockets is often the best thing a dress can offer, and when they appear with the iconic Valentino logo, they really reach perfection.</span>
+            <span class="text-[12px] font-[400] text-[#070707]">$2,400.00 - $2,650.00</span>
+          </div>
+        </div>
+<!-- card 4 -->
+        <div class="item border-1 border-[solid] border-[#838383] relative"data-category="women">
+          <img src="images/p4.jpg" class="object-cover">
+
+          <span class=" absolute border-[1px] border-[solid]   bg-white border-[red] top-2 right-2 p-[3px_6px]" >
+            <p class="text-[12px] font-[500] text-[red]">-7%</p>
+          </span>
+
+          <div class=" absolute bottom-50 left-6 right-6 mb-[10px]">
+           <button id="quick" class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500] hover:bg-black hover:text-[#fff]">👁️ Quick View </button>
+           <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500]  hover:bg-black hover:text-[#fff]"><a href="">➕ Add to cart  </a></button>
+          </div>
+
+          <div class="desc flex flex-col p-[15px_15px_35px_15px]">
+            <span class="pb-[5px] text-[15px] font-[400] hover:text-[#FC5F49] cursor-pointer">Bottega Veneta</span>
+            <span class= "text-[14px"] font-[400]>Sequin Textured Knit A-Line Gown</span>
+            <span class="my-[13px] text-[#454545] text-[12px] font-[400]">Shimmering sequins illuminate the textured knit of this occasion-worthy gown in a simply elegant A-line cut.</span>
+            <span class="text-[12px] font-[400] text-[#070707]">$6,500.00 - $7,500.00</span>
+          </div>
+        </div>
+<!-- card 5 -->
+        <div class="item border-1 border-[solid] border-[#c8c8c8] relative" data-category="women">
+          <img src="images/p5.jpg" class="object-cover">
+
+          
+          <span class=" absolute border-[1px] border-[solid]  bg-white border-[red] top-2 right-24 p-[3px_6px]" >
+            <p class="text-[12px] font-[500] text-[red]">-6%</p>
+          </span>
+
+          <span class=" absolute border-[1px] bg-white border-[solid] border-[black] top-2 right-2 p-[3px_6px]" >
+            <p class="text-[12px] font-[500] text-[black] uppercase">best seller</p>
+          </span>
+         
+          <div class=" absolute bottom-50 left-6 right-6 mb-[10px]">
+           <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500] hover:bg-black hover:text-[#fff]"><a href="">👁️ Quick View  </a></button>
+           <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500]  hover:bg-black hover:text-[#fff]"><a href="">➕ Add to cart  </a></button>
+          </div>
+
+          <div class="desc flex flex-col p-[15px_15px_35px_15px]">
+            <span class="pb-[5px] text-[15px] font-[400] hover:text-[#FC5F49] cursor-pointer">Valentino</span>
+            <span class= "text-[14px"] font-[400]>Melody Fleece Pullover Sweatshirt</span>
+            <span class="my-[13px] text-[#454545] text-[12px] font-[400]">Shimmering sequins illuminate the textured knit of this occasion-worthy gown in a simply elegant A-line cut.</span>
+            <span class="text-[12px] font-[400] text-[#070707]">$850.00 - $900.00</span>
+          </div>
+          
+        </div>
+
+<!-- card 7 -->         
+        <div class="item border-1 border-[solid] border-[#c8c8c8] relative" data-category="men">
+          <img src="images/p7.jpg" class="object-cover">
+
+          
+          <span class=" absolute border-[1px] border-[solid]  bg-white border-[red] top-2 right-2 p-[3px_6px]" >
+            <p class="text-[12px] font-[500] text-[red]">-6%</p>
+          </span>
+
+           <div class="absolute bottom-50 left-6 right-6 mb-[10px]">
+            <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500] hover:bg-black hover:text-[#fff]"><a href="">👁️ Quick View  </a></button>
+            <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500]  hover:bg-black hover:text-[#fff]"><a href="">➕ Add to cart  </a></button>
+          </div>
+         
+          <div class="desc flex flex-col p-[15px_15px_35px_15px]">
+            <span class="pb-[5px] text-[15px] font-[400] hover:text-[#FC5F49] cursor-pointer">Zegna</span>
+            <span class= "text-[14px] font-[400]">Pin Dot Trofeo Milano Wool Suit</span>
+            <span class="my-[13px] text-[#454545] text-[12px] font-[400]">Crafted from the brand’s signature Trofeo wool, this suit features an impeccable fit and modern polish for a subtly sophisticated look and daylong comfort.</span>
+            <span class="text-[12px] font-[400] text-[#070707]">$6400.00 - $6800.00</span>
+          </div>
+          
+        </div>
+<!-- card 8 -->         
+        <div class="item border-1 border-[solid] border-[#c8c8c8] relative"data-category="men">
+          <img src="images/p8.jpg" class="object-cover">
+
+          
+          <span class=" absolute border-[1px] border-[solid]  bg-white border-[red] top-2 right-2 p-[3px_6px]" >
+            <p class="text-[12px] font-[500] text-[red]">-4%</p>
+          </span>
+
+           <div class="absolute bottom-50 left-6 right-6 mb-[10px]">
+            <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500] hover:bg-black hover:text-[#fff]"><a href="">👁️ Quick View  </a></button>
+            <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500]  hover:bg-black hover:text-[#fff]"><a href="">➕ Add to cart  </a></button>
+          </div>
+         
+          <div class="desc flex flex-col p-[15px_15px_35px_15px]">
+            <span class="pb-[5px] text-[15px] font-[400] hover:text-[#FC5F49] cursor-pointer">Boss</span>
+            <span class= "text-[14px] font-[400]">Hanry Solid Suit</span>
+            <span class="my-[13px] text-[#454545] text-[12px] font-[400]">A navy-blue color adds dapper appeal to an Italian suit that’s styled for simplicity with flat-front trousers and classic notched lapels.t</span>
+            <span class="text-[12px] font-[400] text-[#070707]">$4300.00 - $4500.00</span>
+          </div>
+          
+        </div>
+<!-- card 9 -->         
+        <div class="item border-1 border-[solid] border-[#c8c8c8] relative"data-category="men">
+          <img src="images/p9.jpg" class="object-cover">
+
+          
+          <span class=" absolute border-[1px] border-[solid]  bg-white border-[red] top-2 right-2 p-[3px_6px]" >
+            <p class="text-[12px] font-[500] text-[red]">-8%</p>
+          </span>
+
+           <div class="absolute bottom-50 left-6 right-6 mb-[10px]">
+            <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500] hover:bg-black hover:text-[#fff]"><a href="">👁️ Quick View  </a></button>
+            <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500]  hover:bg-black hover:text-[#fff]"><a href="">➕ Add to cart  </a></button>
+          </div>
+         
+          <div class="desc flex flex-col p-[15px_15px_35px_15px]">
+            <span class="pb-[5px] text-[15px] font-[400] hover:text-[#FC5F49] cursor-pointer">zara</span>
+            <span class= "text-[14px] font-[400]">Leather Camp Shirt</span>
+            <span class="my-[13px] text-[#454545] text-[12px] font-[400]">Lambskin leather brings standout looks and comfort to this short-sleeve camp shirt framed with a point collar and snap placket.</span>
+            <span class="text-[12px] font-[400] text-[#070707]">$550.00 - $600.00</span>
+          </div>
+          
+        </div> 
+<!-- card 10 -->         
+        <div class="item border-1 border-[solid] border-[#c8c8c8] relative"data-category="kids">
+          <img src="images/p10.jpg" class="object-cover">
+
+          
+          <span class=" absolute border-[1px] border-[solid]  bg-white border-[red] top-2 right-2 p-[3px_6px]" >
+            <p class="text-[12px] font-[500] text-[red]">-35%</p>
+          </span>
+
+           <div class="absolute bottom-50 left-6 right-6 mb-[10px]">
+            <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500] hover:bg-black hover:text-[#fff]"><a href="">👁️ Quick View  </a></button>
+            <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500]  hover:bg-black hover:text-[#fff]"><a href="">➕ Add to cart  </a></button>
+          </div>
+         
+          <div class="desc flex flex-col p-[15px_15px_35px_15px]">
+            <span class="pb-[5px] text-[15px] font-[400] hover:text-[#FC5F49] cursor-pointer">Mac Duggal</span>
+            <span class= "text-[14px] font-[400]">Kids’ Embroidered Tiered Tulle Dress</span>
+            <span class="my-[13px] text-[#454545] text-[12px] font-[400]">Floral embroidery details the bodice of this keepsake-worthy dress with a ruffled neck and tiered tulle skirt trimmed in scalloped lace.</span>
+            <span class="text-[12px] font-[400] text-[#070707]">$6400.00 - $6800.00</span>
+          </div>
+          
+        </div>        
+<!-- card 11 -->         
+        <div class="item border-1 border-[solid] border-[#c8c8c8] relative"data-category="accessories">
+          <img src="images/p11.jpg" class="object-cover ">
+
+          
+          <span class=" absolute border-[1px] border-[solid]  bg-white border-[red] top-2 right-2 p-[3px_6px]" >
+            <p class="text-[12px] font-[500] text-[red]">-35%</p>
+          </span>
+
+           <div class="absolute bottom-50 left-6 right-6 mb-[10px]">
+            <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500] hover:bg-black hover:text-[#fff]"><a href="">👁️ Quick View  </a></button>
+            <button class="bg-white p-[14px] border-[1px] border-[solid] border-[#000] uppercase text-[12px] font-[500]  hover:bg-black hover:text-[#fff]"><a href="">➕ Add to cart  </a></button>
+          </div>
+         
+          <div class="desc flex flex-col p-[15px_15px_35px_15px]">
+            <span class="pb-[5px] text-[15px] font-[400] hover:text-[#FC5F49] cursor-pointer">Dolce&Gabbana</span>
+            <span class= "text-[14px] font-[400]">Small Kim Sicily Crystal Embellished Handbag</span>
+            <span class="my-[13px] text-[#454545] text-[12px] font-[400]">Signature Dolce&Gabbana flair and modern aesthetics merge </span>
+            <span class="text-[12px] font-[400] text-[#070707]">$6400.00 - $6800.00</span>
+          </div>
+          
+        </div>
+    </div>
+  </div>
+
+<div id="modal" class=" fixed inset-0 bg-white/70 z-40 flex items-center justify-center px-4 hidden">
+  
+  <div class="max-w-[800px] w-full bg-white p-[50px_45px] relative border-1">
+
+    <!-- CLOSE -->
+    <button id="closeModal" class="absolute top-4 right-4 text-2xl">&times;</button>
+
+    <div class="grid md:grid-cols-2 gap-[50px] items-center">
+
+      <!-- IMAGE -->
+      <img src="images/p4.jpg"
+        class="max-h-[500px] object-contain mx-auto shadow-lg">
+
+      <!-- DETAILS -->
+      <div class="detail">
+        <p class="uppercase text-[15px]">bottega veneta</p>
+
+        <p class="text-[23px] font-[500] text-[#070707] mt-[25px]">
+          Sequin Textured Knit A-Line Gown
+        </p>
+
+        <p class="text-[#000] mt-[25px] text-[18px]">
+          $6400.00 - $6800.00
+        </p>
+
+        <p class="text-[15px] font-[400] mt-[20px]">
+          Shimmering sequins illuminate the textured knit of this
+          occasion-worthy gown in a simply elegant A-line cut.
+        </p>
+
+        <div class="flex gap-4 mt-6">
+          <div class="flex items-center border p-[10px_30px] gap-[10px]">
+            <button class="text-[25px]">-</button>
+            <span class="text-[20px]">1</span>
+            <button class="text-[20px]">+</button>
+          </div>
+
+          <button class="bg-black text-white p-[15px_25px] w-full">
+            ADD TO CART
+          </button>
+        </div>
+
+        <div class="flex gap-6 mt-6 text-sm text-gray-500">
+          <span>♡ Add to Wishlist</span>
+          <span>↗ Share</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</section>
+<!-- products  end -->
+
+<!-- Banner Collection -->
+<section class="collectionBanner cursor-pointer">
+  <div class="banner flex">
+<!-- banner 1 -->
+    <div class="banner1 relative border-[black] border-1 group">
+    <img src="images/summer.jpg" class="object-cover  group-hover:bg-white group-hover:opacity-20  " alt="Summer Collection">
+    <div class="text  flex items-center justify-center ">
+      <span class="absolute top-[30px] text-[white] font-light uppercase  text-center group-hover:text-[#FC5F49] ">collection</span>
+      <h1 class="absolute bottom-[120px] text-[white] font-[500] uppercase  text-center text-4xl leading-[60px] group-hover:text-[#FC5F49]">Summer <br> Collection</h1>
+      <a href="#" class="absolute bottom-[20px] text-[white] group-hover:text-[#FC5F49] uppercase">Shop Now</a>
+    </div>
+  </div>
+<!-- Banner 2 -->
+  <div class="banner1 relative border-[black] border-1 group">
+    <img src="images/coll.jpg" class="object-cover  group-hover:bg-white group-hover:opacity-20  " alt="Summer Collection">
+    <div class="text  flex items-center justify-center ">
+      <span class="absolute top-[30px] text-[white] font-light uppercase  text-center group-hover:text-[#FC5F49] ">Discount</span>
+      <h1 class="absolute bottom-[120px] text-[white] font-[500] uppercase  text-center text-4xl leading-[60px] group-hover:text-[#FC5F49]">-30% for Spring <br> Collection</h1>
+      <a href="#" class="absolute bottom-[20px] text-[white] group-hover:text-[#FC5F49] uppercase">Shop Now</a>
+    </div>
+  </div>
+  <!-- banner 3 -->
+   <div class="banner1 relative border-[black] border-1 group">
+    <img src="images/sunglass.jpg" class="object-cover  group-hover:bg-white group-hover:opacity-20  " alt="Summer Collection">
+    <div class="text  flex items-center justify-center ">
+      <span class="absolute top-[30px] text-[white] font-light uppercase  text-center group-hover:text-[#FC5F49] ">For Summer</span>
+      <h1 class="absolute bottom-[120px] text-[white] font-[500] uppercase  text-center text-4xl leading-[60px] group-hover:text-[#FC5F49]">Trendy Sunglasses <br> 2023 </h1>
+      <a href="#" class="absolute bottom-[20px] text-[white] group-hover:text-[#FC5F49]">Shop Now</a>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- end Banner Collection -->
+
+<!-- best -->
+<section>
+  <div class="bg-[url(images/bgimage.webp)] bg-center bg-no-repeat p-[145px_180px] bg-size-[509px_auto]">
+     <h1 class="text-[44px] font-[500] text-center leading-[79px] capitalize tracking-[-1.452px] font-Manrope">We believe that every human deserves to feel beautiful and confident, and we are committed to providing you with the best quality and styles that will make you look and feel your best.</h1>
+  </div>
+</section>
+<!-- end best -->
+
+
+<section class="pb-16 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-center text-3xl font-semibold mb-8">REVIEWS</h2>
+
+    <div id="testimonials" class="relative">
+      <div class="border border-gray-300 rounded-lg p-8 flex items-center gap-6 md:gap-10">
+        <button id="t-prev" aria-label="Previous" class="h-10 w-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-gray-50">
+          <i class="ri-arrow-left-s-line ri-lg"></i>
+        </button>
+
+        <div class="flex items-center gap-6 md:gap-12 flex-1">
+          <img id="t-avatar" src="images/r1.jpg" class="w-24 h-24 rounded-full object-cover shadow-sm">
+
+          <div>
+            <p id="t-text" class="text-gray-700 leading-relaxed max-w-xl">
+              I am a regular at this fashion shop - their stylish clothes and accessories always keep me ahead of the trend.
+            </p>
+
+            <p id="t-author" class="mt-4 font-bold uppercase tracking-wide">MADELYN GEORGE, ELLE</p>
+          </div>
+        </div>
+
+        <button id="t-next" aria-label="Next" class="h-10 w-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-gray-50">
+          <i class="ri-arrow-right-s-line ri-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="w-full border-y border-black py-4 overflow-hidden">
+  <div class="flex gap-6 whitespace-nowrap animate-marquee text-sm font-medium">
+    <span>24/7 SUPPORT</span><span>•</span>
+    <span>HIGH QUALITY COTTON</span><span>•</span>
+    <span>FREE DELIVERY</span><span>•</span>
+    <span>MONEY BACK GUARANTEE</span><span>•</span>
+    <span>24/7 SUPPORT</span>
+    <span>•</span>
+    <span>24/7 SUPPORT</span><span>•</span>
+    <span>HIGH QUALITY COTTON</span><span>•</span>
+    <span>FREE DELIVERY</span><span>•</span>
+    <span>MONEY BACK GUARANTEE</span><span>•</span>
+    <span>24/7 SUPPORT</span>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-[#070707] text-white cursor-pointer">
+  <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div>
+      <h3 class="uppercase font-semibold text-sm mb-4">Sign up to get 10% off your first order</h3>
+      <p class="text-gray-400 text-sm mb-6">Stay up to date on the latest product releases, special offers and news.</p>
+      <form class="flex gap-3 max-w-md" onsubmit="event.preventDefault()">
+        <input type="email" placeholder="Your Email *" class="flex-1 bg-transparent border border-gray-600 px-4 py-3 text-sm placeholder-gray-400 focus:outline-none" />
+        <button class="bg-gray-700 px-5 py-3 text-sm font-semibold hover:bg-gray-600">SUBSCRIBE</button>
+      </form>
+
+      
+    </div>
+
+    <div class="flex md:justify-center sm:justify-start">
+      <ul class="space-y-4 text-sm ">
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Shop</li>
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Faq</li>
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Shipping</li>
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Returns</li>
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Careers</li>
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Terms & Conditions</li>
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Privacy Policy</li>
+      </ul>
+    </div>
+
+    <div class="text-sm">
+      <p class="text-gray-400 mb-4">If you have any questions regarding your order, products or our service, please contact our customer service.</p>
+      <p class="uppercase font-semibold">Monday - Friday: 10:00-6:00 PM</p>
+      <p class="mt-3"><span class="text-gray-400">Phone:</span> <span class="font-bold">+1 712-339-9294</span></p>
+      <p class="mt-2"><span class="text-gray-400">Email:</span> <span class="font-bold">INFO@MODERNO-THEME.COM</span></p>
+      <p class="mt-2"><span class="text-gray-400">Address:</span> <span class="font-bold">283 N. GLENWOOD STREET, LEVITTOWN, NY</span></p>
+
+      <div class="flex gap-4 mt-6">
+        <button class="p-3 border border-gray-700 rounded hover:bg-gray-800"><i class="ri-facebook-line"></i></button>
+        <button class="p-3 border border-gray-700 rounded hover:bg-gray-800"><i class="ri-instagram-line"></i></button>
+        <button class="p-3 border border-gray-700 rounded hover:bg-gray-800"><i class="ri-twitter-x-line"></i></button>
+        <button class="p-3 border border-gray-700 rounded hover:bg-gray-800"><i class="ri-youtube-line"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-800 mt-6">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-gray-400 text-sm">
+      
+
+      <div>© 2025 Moderno Theme. All Rights Reserved.</div>
+
+      <div class="flex items-center gap-3">
+        <button class="p-2 border border-gray-800 rounded"><i class="ri-facebook-line"></i></button>
+        <button class="p-2 border border-gray-800 rounded"><i class="ri-instagram-line"></i></button>
+        <button class="p-2 border border-gray-800 rounded"><i class="ri-youtube-line"></i></button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Testimonials JS (small slider) -->
+
+<script src="Script.js"></script>
+</body>
+
+</html>

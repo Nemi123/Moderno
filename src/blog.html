@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <!-- Tailwind Output -->
+  <link href="./output.css" rel="stylesheet" />
+
+  <!-- Remix Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <section class="w-full z-20  md:min-h-[114px] sm:min-h[71px] cursor-pointer  fixed overflow-hidden backdrop-blur-lg z-20">
+
+  <!-- HEADER -->
+  <div class="header  ">
+
+    <!-- TOP BAR -->
+    <div class="flex justify-between items-center lg:mx-[30px] md:mx-[10px]  p-[15px]">
+
+      <!-- Offer text (desktop only) -->
+      <a href="#" class="font-Manrope text-[#070707] text-[15px] animate-pulse hidden md:block">
+        Best special offers! 40% Off!
+      </a>
+
+      <!-- Logo -->
+      <figure>
+        <a href="#"><img src="images/logo.svg" alt="Logo"></a>
+      </figure>
+
+      <!-- Desktop Icons -->
+      <div class="Icon hidden md:flex">
+        <a href="#"><i class="ri-user-line text-[20px] pr-[5px]"></i></a>
+        <a href="#"><i class="ri-search-line text-[20px] pr-[5px]"></i></a>
+        <a href="#"><i class="ri-poker-hearts-line text-[20px] pr-[5px]"></i></a>
+        <a href="#"><i class="ri-shopping-bag-line text-[20px] pr-[5px]"></i></a>
+      </div>
+
+      <!-- Hamburger (mobile only) -->
+      <button id="menuBtn" class="md:hidden text-[26px]">
+        <i class="ri-menu-line"></i>
+      </button>
+
+    </div>
+
+    <hr class="m-0" />
+
+    <!-- NAVBAR (desktop only) -->
+    <nav class="navbar hidden md:block">
+      <ul class="flex gap-[50px] font-[500] py-[15px] justify-center text-[12px] uppercase">
+        <a href="index.html"><li>Homes</li></a>
+        <a href="Shop.html"><li>Shop</li></a>
+        <a href="blog.html"><li>Blog</li></a>
+        <a href="index.html"><li>Pages</li></a>
+        <a href="Shop.html"><li>Mega</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+      </ul>
+    </nav>
+
+  </div>
+</section>
+
+<!-- SIDEBAR (mobile) -->
+<div id="sidebar"
+  class="fixed top-0 left-0 h-full w-[260px] bg-white shadow-lg
+         -translate-x-full transition-transform duration-300 z-50">
+
+  <!-- Close -->
+  <div class="flex justify-end p-4">
+    <button id="closeBtn" class="text-[24px]">
+      <i class="ri-close-line"></i>
+    </button>
+  </div>
+
+  <!-- Menu -->
+  <ul class="flex flex-col gap-6 px-6 text-[14px] uppercase font-[500]">
+    <a href="index.html"><li>Homes</li></a>
+        <a href="Shop.html"><li>Shop</li></a>
+        <a href="blog.html"><li>Blog</li></a>
+        <a href="index.html"><li>Pages</li></a>
+        <a href="Shop.html"><li>Mega</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+  </ul>
+
+  <!-- Icons -->
+  <div class="flex gap-4 px-6 mt-8 text-[20px]">
+    <i class="ri-user-line"></i>
+    <i class="ri-search-line"></i>
+    <i class="ri-poker-hearts-line"></i>
+    <i class="ri-shopping-bag-line"></i>
+  </div>
+</div>
+
+<!-- fake header -->
+<section class="w-full md:min-h-[114px] sm:min-h[71px] bg-[#fff]" >
+<figure class="lg:mx-[30px] md:mx-[10px]  p-[20px]">
+        <a href="#"><img src="" alt="Logo"></a>
+      </figure>
+</section>
+
+<!-- Hero / Blog Grid -->
+<section class="max-w-6xl mx-auto px-6 py-12">
+
+
+  <!-- Blog posts grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Post 1 -->
+    <article class="bg-white border border-gray-200">
+      <img src="images/b1.jpg" alt="Summer Collections" class="w-full h-48 md:h-56 object-cover">
+      <div class="p-6">
+        <div class="text-xs text-gray-500 mb-4 inline-block border border-gray-200 px-3 py-1 uppercase">April 23, 2023</div>
+        <h3 class="mt-2 text-2xl font-semibold text-gray-900 mb-3">Summer Collections</h3>
+        <p class="text-gray-600 mb-6">Summer is just around the corner, which means it’s time to update our wardrobes with the latest fashion trends.</p>
+
+        <div class="text-sm text-gray-500 uppercase mb-2">News</div>
+        <a href="#" class="inline-flex items-center text-sm font-semibold text-gray-900 hover:underline">
+          Read More <i class="ri-arrow-right-line ml-2"></i>
+        </a>
+      </div>
+    </article>
+
+    <!-- Post 2 -->
+    <article class="bg-white border border-gray-200">
+      <img src="images/b2.jpg" alt="Best Gifts for Holidays" class="w-full h-48 md:h-56 object-cover">
+      <div class="p-6">
+        <div class="text-xs text-gray-500 mb-4 inline-block border border-gray-200 px-3 py-1 uppercase">April 23, 2023</div>
+        <h3 class="mt-2 text-2xl font-semibold text-gray-900 mb-3">Best Gifts for Holidays</h3>
+        <p class="text-gray-600 mb-6">The holiday season is a time for joy, celebration, and giving. Finding the perfect gift takes thought and creativity.</p>
+
+        <div class="text-sm text-gray-500 uppercase mb-2">Discounts</div>
+        <a href="#" class="inline-flex items-center text-sm font-semibold text-gray-900 hover:underline">
+          Read More <i class="ri-arrow-right-line ml-2"></i>
+        </a>
+      </div>
+    </article>
+
+    <!-- Post 3 -->
+    <article class="bg-white border border-gray-200">
+      <img src="images/b1.jpg" alt="Gigi Hadid Show" class="w-full h-48 md:h-56 object-cover">
+      <div class="p-6">
+        <div class="text-xs text-gray-500 mb-4 inline-block border border-gray-200 px-3 py-1 uppercase">April 23, 2023</div>
+        <h3 class="mt-2 text-2xl font-semibold text-gray-900 mb-3">Gigi Hadid Show Our New Luxury Collection</h3>
+        <p class="text-gray-600 mb-6">Fashion icon Gigi Hadid has once again taken the fashion world by storm with her latest collection.</p>
+
+        <div class="text-sm text-gray-500 uppercase mb-2">Promo</div>
+        <a href="#" class="inline-flex items-center text-sm font-semibold text-gray-900 hover:underline">
+          Read More <i class="ri-arrow-right-line ml-2"></i>
+        </a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Pagination (simple) -->
+  <div class="mt-10 flex justify-center">
+    <nav class="inline-flex items-center space-x-3">
+      <button class="px-3 py-2 border border-gray-300 rounded bg-white">1</button>
+      <button class="px-3 py-2 border border-gray-300 rounded bg-white">2</button>
+      <button class="px-3 py-2 border border-gray-300 rounded bg-white">3</button>
+    </nav>
+  </div>
+</section>
+
+
+
+<div class="w-full border-y border-black py-4 overflow-hidden">
+  <div class="flex gap-6 whitespace-nowrap animate-marquee text-sm font-medium">
+    <span>24/7 SUPPORT</span><span>•</span>
+    <span>HIGH QUALITY COTTON</span><span>•</span>
+    <span>FREE DELIVERY</span><span>•</span>
+    <span>MONEY BACK GUARANTEE</span><span>•</span>
+    <span>24/7 SUPPORT</span>
+    <span>•</span>
+    <span>24/7 SUPPORT</span><span>•</span>
+    <span>HIGH QUALITY COTTON</span><span>•</span>
+    <span>FREE DELIVERY</span><span>•</span>
+    <span>MONEY BACK GUARANTEE</span><span>•</span>
+    <span>24/7 SUPPORT</span>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-[#070707] text-white cursor-pointer">
+  <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div>
+      <h3 class="uppercase font-semibold text-sm mb-4">Sign up to get 10% off your first order</h3>
+      <p class="text-gray-400 text-sm mb-6">Stay up to date on the latest product releases, special offers and news.</p>
+      <form class="flex gap-3 max-w-md" onsubmit="event.preventDefault()">
+        <input type="email" placeholder="Your Email *" class="flex-1 bg-transparent border border-gray-600 px-4 py-3 text-sm placeholder-gray-400 focus:outline-none" />
+        <button class="bg-gray-700 px-5 py-3 text-sm font-semibold hover:bg-gray-600">SUBSCRIBE</button>
+      </form>
+
+      
+    </div>
+
+    <div class="flex md:justify-center sm:justify-start">
+      <ul class="space-y-4 text-sm ">
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Shop</li>
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Faq</li>
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Shipping</li>
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Returns</li>
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Careers</li>
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Terms & Conditions</li>
+        <li class="uppercase font-medium hover:text-[#FC5F49]">Privacy Policy</li>
+      </ul>
+    </div>
+
+    <div class="text-sm">
+      <p class="text-gray-400 mb-4">If you have any questions regarding your order, products or our service, please contact our customer service.</p>
+      <p class="uppercase font-semibold">Monday - Friday: 10:00-6:00 PM</p>
+      <p class="mt-3"><span class="text-gray-400">Phone:</span> <span class="font-bold">+1 712-339-9294</span></p>
+      <p class="mt-2"><span class="text-gray-400">Email:</span> <span class="font-bold">INFO@MODERNO-THEME.COM</span></p>
+      <p class="mt-2"><span class="text-gray-400">Address:</span> <span class="font-bold">283 N. GLENWOOD STREET, LEVITTOWN, NY</span></p>
+
+      <div class="flex gap-4 mt-6">
+        <button class="p-3 border border-gray-700 rounded hover:bg-gray-800"><i class="ri-facebook-line"></i></button>
+        <button class="p-3 border border-gray-700 rounded hover:bg-gray-800"><i class="ri-instagram-line"></i></button>
+        <button class="p-3 border border-gray-700 rounded hover:bg-gray-800"><i class="ri-twitter-x-line"></i></button>
+        <button class="p-3 border border-gray-700 rounded hover:bg-gray-800"><i class="ri-youtube-line"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-800 mt-6">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-gray-400 text-sm">
+      
+
+      <div>© 2025 Moderno Theme. All Rights Reserved.</div>
+
+      <div class="flex items-center gap-3">
+        <button class="p-2 border border-gray-800 rounded"><i class="ri-facebook-line"></i></button>
+        <button class="p-2 border border-gray-800 rounded"><i class="ri-instagram-line"></i></button>
+        <button class="p-2 border border-gray-800 rounded"><i class="ri-youtube-line"></i></button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="Script.js"></script>
+</body>
+</html>

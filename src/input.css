@@ -1,0 +1,21 @@
+
+@tailwind utilities;
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+ @theme {
+  --font-Manrope: "Manrope", sans-serif; 
+  --animate-marquee: marquee 15s linear infinite;
+
+  @keyframes marquee {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-15%);
+    }
+  }
+  }
+
+
